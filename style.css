@@ -1,0 +1,102 @@
+:root {
+    /* colors */
+    --color-slate-900: hsla(218, 44%, 22%, 1);
+    --color-slate-500: hsla(216, 15%, 48%, 1);
+    --color-slate-300: hsla(212, 45%, 89%, 1);
+    --color-blue-600: hsla(216, 95%, 58%, 1);
+    --color-blue-500: hsla(216, 100%, 61%, 1);
+    --color-white: hsla(0, 0%, 100%, 1);
+
+    /* spacing */
+    --spacing-500: 40px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+
+    /* font sizes */
+    --font-size-text-preset-1: 22px;
+    --font-size-text-preset-2: 15px;
+
+    font-feature-settings: 'liga' off, 'clig' off;
+
+
+}
+
+* {
+  margin: 0;   /* Supprime toutes les marges par défaut */
+  padding: 0;  /* Supprime aussi les espacements internes */
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Outfit', sans-serif;
+
+    background: var(--color-slate-300);
+    gap: var(--spacing-500);
+}
+
+.card {
+    width: 320px;
+    display: flex;
+    padding: var(--spacing-200) var(--spacing-200) var(--spacing-500) var(--spacing-200);
+    flex-direction: column;
+    /* align-items: flex-start; */
+    gap: var(--spacing-300, 24px);
+
+    border-radius: 20px;
+    background: var(--color-white);
+
+    /* card-shadow */
+    box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.05);
+}
+
+.text {
+    display: flex;
+    padding: 0 var(--spacing-200);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-200);
+    align-self: stretch;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+h1 {
+    color: var(--color-slate-900);
+    text-align: center;
+
+
+    /* text-preset-1 */
+    font-family: Outfit, sans-serif;
+    font-size: var(--font-size-text-preset-1);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 26.4px */
+
+}
+
+p {
+    color: var(--color-slate-500, #68778D);
+    text-align: center;
+
+    /* text-preset-2 */
+    font-family: Outfit;
+    font-size: var(--font-size-text-preset-2, 15px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 21px */
+    letter-spacing: 0.2px;
+  
+}
